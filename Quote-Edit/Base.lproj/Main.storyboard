@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fgv-Ku-ACZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Yly-WN-b8R">
+            <objects>
+                <navigationController id="Fgv-Ku-ACZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="amK-6j-0Ep">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="34D-Ak-zpO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7zp-9J-EGB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78" y="134"/>
+        </scene>
+        <!--Quote View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="QuoteViewController" customModule="Quote-Edit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="«" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A26-5B-UMm">
+                                <rect key="frame" x="0.0" y="64" width="33" height="60"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="»" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eX-Vk-u4l">
+                                <rect key="frame" x="342" y="154" width="33" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPJ-Vr-xqL">
+                                <rect key="frame" x="43" y="84" width="299" height="122"/>
+                                <string key="text">By clicking "Post Your Answer", you acknowledge that you have read our updated terms of service, privacy policy and cookie policy, and that your continued use of the website is subject to these policies.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYo-Hn-r8M">
+                                <rect key="frame" x="247.5" y="222" width="97.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BPJ-Vr-xqL" firstAttribute="top" secondItem="A26-5B-UMm" secondAttribute="top" constant="20" id="3TF-lY-nmt"/>
+                            <constraint firstItem="IYo-Hn-r8M" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-30" id="6tE-Dk-ny0"/>
+                            <constraint firstItem="2eX-Vk-u4l" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="AcU-MO-BFX"/>
+                            <constraint firstItem="2eX-Vk-u4l" firstAttribute="baseline" secondItem="BPJ-Vr-xqL" secondAttribute="baseline" id="aKn-0h-Kpt"/>
+                            <constraint firstItem="IYo-Hn-r8M" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="l3O-5F-YLU"/>
+                            <constraint firstItem="A26-5B-UMm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nii-bG-T8b"/>
+                            <constraint firstItem="IYo-Hn-r8M" firstAttribute="top" secondItem="BPJ-Vr-xqL" secondAttribute="bottom" constant="16" id="qVE-sO-Rip"/>
+                            <constraint firstItem="2eX-Vk-u4l" firstAttribute="leading" secondItem="BPJ-Vr-xqL" secondAttribute="trailing" priority="750" id="rEZ-jW-yUR"/>
+                            <constraint firstItem="A26-5B-UMm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w0N-VU-8cU"/>
+                            <constraint firstItem="BPJ-Vr-xqL" firstAttribute="leading" secondItem="A26-5B-UMm" secondAttribute="trailing" constant="10" id="znz-Hm-rWq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Ob-Zx-eP1">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="M5S-hT-20H">
+                            <connections>
+                                <segue destination="i42-o9-LVe" kind="show" id="cq1-LI-wRl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="quoteAuthorLabel" destination="IYo-Hn-r8M" id="XBM-eP-cM5"/>
+                        <outlet property="quoteTextLabel" destination="BPJ-Vr-xqL" id="mL6-25-IMp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="134"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="q9C-ly-BNm">
+            <objects>
+                <viewController id="i42-o9-LVe" customClass="EditViewController" customModule="Quote-Edit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pZk-A3-Wro">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gxj-DE-RVk">
+                                <rect key="frame" x="16" y="105" width="359" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="niz-aD-8Ql"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Quote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1z-8b-FA8">
+                                <rect key="frame" x="16" y="74" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Author" borderStyle="roundedRect" placeholder="Author" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="03l-l9-G8E">
+                                <rect key="frame" x="207" y="253" width="152" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="03l-l9-G8E" firstAttribute="top" secondItem="gxj-DE-RVk" secondAttribute="bottom" constant="20" id="BI8-Si-khD"/>
+                            <constraint firstItem="gxj-DE-RVk" firstAttribute="top" secondItem="l1z-8b-FA8" secondAttribute="bottom" constant="10" id="CJF-sM-LgO"/>
+                            <constraint firstItem="l1z-8b-FA8" firstAttribute="leading" secondItem="e3W-Dx-4hF" secondAttribute="leading" constant="16" id="CLG-Wf-Z8n"/>
+                            <constraint firstItem="03l-l9-G8E" firstAttribute="leading" secondItem="e3W-Dx-4hF" secondAttribute="leading" constant="207" id="NUH-5V-fvu"/>
+                            <constraint firstItem="l1z-8b-FA8" firstAttribute="top" secondItem="e3W-Dx-4hF" secondAttribute="top" constant="10" id="RSp-Lg-HpW"/>
+                            <constraint firstAttribute="trailing" secondItem="gxj-DE-RVk" secondAttribute="trailing" id="Rdl-Pv-Suj"/>
+                            <constraint firstItem="03l-l9-G8E" firstAttribute="trailing" secondItem="pZk-A3-Wro" secondAttribute="trailingMargin" id="rwE-gC-P12"/>
+                            <constraint firstItem="gxj-DE-RVk" firstAttribute="leading" secondItem="l1z-8b-FA8" secondAttribute="leading" id="t52-Ra-IKO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e3W-Dx-4hF"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="jld-dY-zUU">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="3b2-l8-UIy">
+                            <connections>
+                                <action selector="saveQuoteButtonPressed:" destination="i42-o9-LVe" id="L4j-1a-gQO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="authorTextField" destination="03l-l9-G8E" id="7jJ-s7-Vru"/>
+                        <outlet property="quoteTextView" destination="gxj-DE-RVk" id="itd-2a-hLb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tM4-F0-bqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1844" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
